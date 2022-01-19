@@ -1,0 +1,10 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+# nós do cluster
+nodes: 
+# papel/função que o nó vai exercer:
+# control-plane (vai gerenciar o kubernetes, é o master)
+- role: control-plane
+- role: worker
+- role: worker
+- role: worker
